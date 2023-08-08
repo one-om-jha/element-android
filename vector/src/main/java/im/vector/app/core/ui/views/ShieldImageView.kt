@@ -64,8 +64,8 @@ class ShieldImageView @JvmOverloads constructor(
     }
 
     fun render(roomEncryptionTrustLevel: RoomEncryptionTrustLevel?, borderLess: Boolean = false) {
-        isVisible = roomEncryptionTrustLevel != null
-
+//        isVisible = roomEncryptionTrustLevel != null
+        isVisible = false
         when (roomEncryptionTrustLevel) {
             RoomEncryptionTrustLevel.Default -> {
                 contentDescription = context.getString(R.string.a11y_trust_level_default)
@@ -97,7 +97,7 @@ class ShieldImageView @JvmOverloads constructor(
     }
 
     fun renderE2EDecoration(decoration: E2EDecoration?) {
-        isVisible = true
+        isVisible = false
         when (decoration) {
             E2EDecoration.WARN_IN_CLEAR -> {
                 contentDescription = context.getString(R.string.unencrypted)
@@ -130,7 +130,8 @@ class ShieldImageView @JvmOverloads constructor(
     }
 
     fun renderUser(userVerificationLevel: UserVerificationLevel?, borderLess: Boolean = false) {
-        isVisible = userVerificationLevel != null
+//        isVisible = userVerificationLevel != null
+        isVisible = false
         when (userVerificationLevel) {
             UserVerificationLevel.VERIFIED_ALL_DEVICES_TRUSTED -> {
                 contentDescription = context.getString(R.string.a11y_trust_level_trusted)

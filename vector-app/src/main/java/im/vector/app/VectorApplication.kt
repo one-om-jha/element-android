@@ -78,6 +78,7 @@ import java.util.Locale
 import java.util.concurrent.Executors
 import javax.inject.Inject
 import androidx.work.Configuration as WorkConfiguration
+import com.google.android.material.color.DynamicColors
 
 @HiltAndroidApp
 class VectorApplication :
@@ -201,6 +202,8 @@ class VectorApplication :
             addAction(Intent.ACTION_SCREEN_OFF)
             addAction(Intent.ACTION_SCREEN_ON)
         })
+
+        DynamicColors.applyToActivitiesIfAvailable(this)
 
         EmojiManager.install(GoogleEmojiProvider())
 
