@@ -45,6 +45,7 @@
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:fitsSystemWindows="true"
             app:layout_constraintTop_toBottomOf="@id/syncStateView">
 
@@ -60,6 +61,7 @@
                     style="@style/Widget.Vector.Material3.Toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/white"
                     android:elevation="0dp"
                     app:layout_collapseMode="pin"
                     tools:title="@string/all_chats">
@@ -84,7 +86,7 @@
                     android:importantForAccessibility="no"
                     android:scaleType="center"
                     android:src="@drawable/ic_settings_x"
-                    app:tint="?colorPrimary"
+                    app:tint="@color/md_theme_light_primary"
                     tools:ignore="MissingPrefix" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -95,6 +97,7 @@
             android:id="@+id/roomListContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@android:color/white"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -111,12 +114,11 @@
         android:contentDescription="@string/a11y_open_spaces"
         android:src="@drawable/ic_spaces"
         android:visibility="gone"
-        app:backgroundTint="?attr/vctr_toolbar_background"
-        app:fabSize="mini"
+        app:fabSize="normal"
         app:layout_constraintBottom_toTopOf="@id/newLayoutCreateChatButton"
         app:layout_constraintEnd_toEndOf="@id/newLayoutCreateChatButton"
         app:layout_constraintStart_toStartOf="@id/newLayoutCreateChatButton"
-        app:tint="?attr/colorPrimary"
+        app:useCompatPadding="false"
         tools:targetApi="lollipop_mr1"
         tools:visibility="visible" />
 
@@ -154,6 +156,7 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:useCompatPadding="false"
         tools:targetApi="lollipop_mr1"
         tools:visibility="visible" />
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Widget.Vector.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal" />
+    <style name="Widget.Vector.ProgressBar.Horizontal" parent="Widget.Material3.LinearProgressIndicator" />
 
     <style name="Widget.Vector.ProgressBar.Horizontal.File">
         <item name="android:indeterminateOnly">false</item>

@@ -24,7 +24,7 @@
 
     <!-- Toolbar text style -->
     <!-- main text -->
-    <style name="TextAppearance.Vector.Widget.ActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <style name="TextAppearance.Vector.Widget.ActionBarTitle" parent="TextAppearance.Material3.ActionBar.Title">
         <item name="android:textColor">?vctr_content_primary</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="fontFamily">sans-serif-medium</item>
@@ -32,7 +32,7 @@
     </style>
 
     <!-- sub text -->
-    <style name="TextAppearance.Vector.Widget.ActionBarSubTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+    <style name="TextAppearance.Vector.Widget.ActionBarSubTitle" parent="TextAppearance.Material3.ActionBar.Subtitle">
         <item name="android:textColor">?vctr_content_secondary</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="fontFamily">sans-serif</item>

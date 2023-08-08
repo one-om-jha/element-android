@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Widget.Vector.EditText.Composer" parent="Widget.AppCompat.EditText">
+    <style name="Widget.Vector.EditText.Composer" parent="Widget.Material3.TextInputEditText.OutlinedBox">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:inputType">textCapSentences|textMultiLine</item>
         <item name="android:maxLines">10</item>
@@ -11,7 +11,7 @@
         <item name="android:textColor">?vctr_message_text_color</item>
     </style>
 
-    <style name="Widget.Vector.EditText.RichTextComposer" parent="Widget.AppCompat.EditText">
+    <style name="Widget.Vector.EditText.RichTextComposer" parent="Widget.Material3.TextInputEditText.OutlinedBox">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:inputType">textCapSentences|textMultiLine</item>
         <item name="android:maxLines">10</item>
